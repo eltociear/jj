@@ -12,8 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// this was supposed to be fixed in 1.71.0, but barely missed the cut.
-// can be released after we bump MSRV to 1.72.0, see:
+// TODO FIXME (aseipp): check on MSRV bumps, 1.73 still triggered
 // https://github.com/frondeus/test-case/issues/126#issuecomment-1635916592
 #![allow(clippy::items_after_test_module)]
 

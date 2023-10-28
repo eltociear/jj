@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Breaking changes
 
+* The minimum supported Rust version (MSRV) is now 1.73.0.
+
 * Conflicts are now stored in a different way. Commits written by a new `jj`
   binary will not be read correctly by older `jj` binaries. The new model
   solves some performance problems with the old model. For example, `jj log`
