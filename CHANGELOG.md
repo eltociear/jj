@@ -73,6 +73,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * `jj workspace root` was aliased to `jj root`, for ease of discoverability
 
+* `jj git` now has an `init` command that initializes a git backed repo.
+  `jj init --git` and `jj init --git-repo` are now deprecated and
+  will be removed in the near future.
+ 
+
 ### Fixed bugs
 
 * Fixed snapshots of symlinks in `gitignore`-d directory.
