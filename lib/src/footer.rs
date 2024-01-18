@@ -39,8 +39,8 @@ pub fn get_footer_lines(body: &str) -> Option<IndexMap<String, Vec<String>>> {
     // by newline, but we need to immediately reverse the order of the lines
     // to ensure we parse the footer in an unambiguous manner; this avoids cases
     // where a colon in the body of the message is mistaken for a footer line
-    let mut footer = IndexMap::new();
-    let lines: Vec<&str> = body.trim().lines().rev().collect();
+
+    let lines = body.trim().lines().rev().collect::<Vec<&str>>();
 
     // short-circuit if there is only 1 line; this avoids a case where a commit
     // with a single-line description like 'cli: fix bug' does not have a
@@ -49,6 +49,7 @@ pub fn get_footer_lines(body: &str) -> Option<IndexMap<String, Vec<String>>> {
         return None;
     }
 
+    let mut footer = IndexMap::new();
     for line in lines {
         if line.is_empty() {
             break;
