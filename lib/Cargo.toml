@@ -32,6 +32,7 @@ git2 = { workspace = true }
 gix = { workspace = true }
 glob = { workspace = true }
 hex = { workspace = true }
+indexmap = { workspace = true }
 itertools = { workspace = true }
 maplit = { workspace = true }
 once_cell = { workspace = true }
